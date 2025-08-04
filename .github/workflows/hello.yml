@@ -1,8 +1,8 @@
 name: Hello   # Name of workflow
 on: push      # Event
 jobs:         # Definition of job
-  hello:
-    runs-on: ubuntu-lates   # Runner
+  hello:      # ID of job
+    runs-on: ubuntu-latest  # Runner
     steps:                  # Definition of step
       - run: echo "Hello, world"
       - uses: actions/checkout@v4
